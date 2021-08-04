@@ -21,7 +21,7 @@ SAGEMAKER_IMAGE=$(cat $SYSENV | grep DR_SAGEMAKER_IMAGE | sed 's/.*=//')
 ROBOMAKER_IMAGE=$(cat $SYSENV | grep DR_ROBOMAKER_IMAGE | sed 's/.*=//')
 
 docker pull awsdeepracercommunity/deepracer-sagemaker:$SAGEMAKER_IMAGE
-docker pull awsdeepracercommunity/deepracer-robomaker:$ROBOMAKER_IMAGE
+docker pull bandwidthresearch/deepracer-robomaker:$ROBOMAKER_IMAGE
 
 dr-reload
 
